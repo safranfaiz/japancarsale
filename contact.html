@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+
+<head>
+  <title>Japan Car Resale</title>
+  <!--meta tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <meta name="keywords" content="Mulching Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+      Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" /> -->
+  <script>
+    addEventListener("load", function () {
+      setTimeout(hideURLbar, 0);
+    }, false);
+
+    function hideURLbar() {
+      window.scrollTo(0, 1);
+    }
+
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
+    }
+
+
+    function myFunction() {
+      // var name = document.getElementsByName("name");
+      // console.log(name+" ");
+
+      if (document.getElementsByName("name")[0].value != "" && document.getElementsByName("address")[0].value != "" && document.getElementsByName("cnt")[0].value != "") {
+
+        var template_params = {
+          "reply_to": "nihon.shokai123@gmail.com",
+          "name": document.getElementsByName("name")[0].value,
+          "address": document.getElementsByName("address")[0].value,
+          "cnt": document.getElementsByName("cnt")[0].value
+        }
+
+        var service_id = "nihon.shokai123@gmail.com";
+        var template_id = "template_fKCgPd3Q";
+        var user_id = "user_1M8wIIj50BPadfrDY5OAe";
+        emailjs.send(service_id, template_id, template_params, user_id).then(function (response) {
+          console.log('SUCCESS!', response.status, response.text);
+          document.getElementsByName("name")[0].value = "";
+          document.getElementsByName("address")[0].value = "";
+          document.getElementsByName("cnt")[0].value = "";
+
+          alert("You'r message sent successfully...");
+
+        }, function (error) {
+          alert("You'r message sent failed...");
+          console.log('FAILED...', error);
+        });
+
+      } else {
+        alert("Fill the all fields");
+      }
+    }
+
+  </script>
+  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/style.css" rel='stylesheet' type='text/css' media="all">
+  <link href="//fonts.googleapis.com/css?family=Poiret+One&amp;subset=cyrillic,latin-ext" rel="stylesheet">
+  <link href="//fonts.googleapis.com/css?family=Mada:200,300,400,500,600,700,900&amp;subset=arabic" rel="stylesheet">
+  <script type="text/javascript"
+    src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.0/dist/email.min.js">
+  </script>
+</head>
+
+<body>
+  <!--headder-->
+  <!-- <div class="header-outs inner_page-banner " id="home"> -->
+    <!-- <div id="google_translate_element"></div> -->
+  <!-- </div> -->
+
+  <div class="header-outs">
+     <img src="./images/c1.jpg" style="width: 100%;">
+     <h3 class="title-text">DEALERS IN MOTOR VEHICLE AND MACHINERIES. ETC</h3>
+  </div>
+
+  <!--contact -->
+  <section class="contact py-lg-4 py-md-3 py-sm-3 py-3">
+    <div class="container py-lg-5 py-md-4 py-sm-4 py-3">
+      <h1 class="title text-center mb-lg-5 mb-md-4 mb-sm-4 mb-3">カーライフ</h1>
+
+      <div class="wanted-cars">
+        <ul class="list-group">
+          <li class="list-group-item list-group-item-dark list-items">*エンジンのかからない車</li>
+          <li class="list-group-item list-group-item-dark list-items">*動かない車</li>
+          <li class="list-group-item list-group-item-dark list-items">*倉庫になっている車（代わりの車手配含）</li>
+          <li class="list-group-item list-group-item-dark list-items">*すごく古い車</li>
+        </ul>
+      </div>
+
+      <h4 class="title text-center mb-lg-5 mb-md-4 mb-sm-4 mb-3">お問い合わせ</h4>
+      <div class="row">
+
+        <div class="col-lg-10 col-md-10 contact-form-txt">
+          <!--<form action="" method="post" enctype="multipart/form-data">-->
+          <div class="w3pvt-wls-contact-mid">
+            <!-- <div class="form-group contact-forms">
+              Name* : <input type="text" class="form-control" name="name">
+            </div> -->
+            <div class="form-group contact-forms">
+              住所 * : <input type="text" class="form-control" name="address">
+            </div>
+            <div class="form-group contact-forms">
+              携帯 * : <input type="text" class="form-control" name="cnt">
+            </div>
+            <button class="btn sent-butnn" onclick="myFunction()">送る</button>
+          </div>
+          <!--</form>-->
+
+
+          <div class="details">
+            <span class="company-details">
+                このお車を売却する予定がございましたら、ぜひ当社にて買取りさせてください。無料で当社よりお伺いします。また、乗用車・バン・トラック・4tダンプ・大型ダンプ・重機・フォークリフト・クレーン・ユンボ*発電機・事故車・不動車・排ガス規制車等も買取りします。処分に伴う面倒な手続きも責任もって処理いたします。相場は常に変動いたしますのでお早めにどうぞ！
+            </span>
+          </div>
+
+          <div class="row mt-lg-5 mt-md-4 mt-3">
+            <div class="contact-list-grid col-lg-6 col-md-6 col-sm-6">
+              <!-- <h4>Person 1</h4> -->
+              <p class="pt-2">〒445-0802愛知県西尾市米津町仲之畑ホワイトゴート米津106</p>
+              <!-- <p>Austraila</p> -->
+            </div>
+            <!-- <div class="contact-list-grid col-lg-6 col-md-6 col-sm-6">
+              <h4>Person 2</h4>
+              <p class="pt-2">Melbourne St,South Birbane 4101</p>
+              <p>Austraila</p>
+            </div> -->
+          </div>
+          <div class="row mt-lg-4 mt-3">
+            <div class="contact-list-grid col-lg-6 col-md-6 col-sm-6">
+              <h4>携帯</h4>
+              <p class="pt-2">090-1827-1425 </p>
+              <p>080-5119-9353</p>
+            </div>
+            <!-- <div class="contact-list-grid col-lg-6 col-md-6 col-sm-6">
+              <h4>Email</h4>
+              <p class="pt-2"><a href="mailto:info@example.com">info@example1.com</a>
+              </p>
+              <p class="pt-2"><a href="mailto:info@example.com">info@example.com</a>
+              </p>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--//contact  -->
+  <!-- footer -->
+  <footer class="py-lg-4 py-md-3 py-sm-3 py-3">
+    <div class="container py-lg-5 py-md-5 py-sm-4 py-3">
+      <div class="footer-w3layouts-head text-center">
+        <h2><a href="#">カーライフ</a></h2>
+      </div>
+
+      <div class="bottem-wthree-footer text-center pt-md-4 pt-3">
+        <p>
+          <!-- © 2019 Mulching. All Rights Reserved | Design by <a href="#" target="_blank"></a> -->
+        </p>
+      </div>
+      <!-- move icon -->
+      <div class="text-center">
+        <a href="#home" class="move-top text-center mt-3"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+      </div>
+      <!--//move icon -->
+    </div>
+  </footer>
+  <!--//footer -->
+</body>
+
+</html>
